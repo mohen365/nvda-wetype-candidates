@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><title>WeType candidate announcements</title>
+<h1>WeType candidate announcements for NVDA</h1>
+<p>This NVDA add-on reads the selected candidate exposed by the Windows Text Services Framework (TSF). It does not use OCR, screenshots, network access, clipboard capture, or arrow-count prediction.</p>
+<p>Version 0.3.2 was tested with WeType 3.0.0.32 and NVDA 2026.2 on 64-bit Windows. The compact one-row candidate bar is supported. WeType's expanded grid currently returns inconsistent selection data through its TSF interface, so the add-on deliberately stays silent for lists with more than nine candidates.</p>
+<p>The native helper is source-available under <a href="../source/wetypeTsfBridge.cpp">GPL-2.0-or-later</a>. The included DLL is a convenience build; rebuild it if desired.</p>
+<p>Install the add-on from the release file, or copy the <code>globalPlugins/wetypeCandidates</code> directory into the NVDA add-ons directory. Restart NVDA after installation.</p>
+<p>本插件通过 Windows TSF 读取微信输入法实际返回的候选序号和文字，不使用 OCR、不截图、不读取剪贴板，也不根据箭头次数猜测候选。微信输入法展开候选网格目前会返回不一致的数据，因此超过九项时主动停止朗读，避免误读。</p>
